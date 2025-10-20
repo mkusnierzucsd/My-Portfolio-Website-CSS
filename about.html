@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="This is the about page of my site. FHere you can learn all about me.">
+        <meta name="description" content="This is the about page of my site. Here you can learn all about me.">
         <title>About Me</title>
         <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
         <style>
@@ -14,4 +14,48 @@
             }
         </style>
     </head>
+    <body>
+        <header>
+            <div class="top">
+                <h1>About Me</h1>
+                <a href="home.html">Home</a> <a href="projects.html">Projects</a> <a href="contact.html">Contact Me</a>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h2>Hi, I'm Matthew.</h2>
+                <aside>
+                    <picture> <!-- This will probably be changed to a different picture eventually -->
+                        <source srcset="/assets/IMG_6562_2_240x320.jpg" type="images/jpg" media="(min-width: 240px)">
+                        <source srcset="/assets/IMG_6562.avif" type="image/avif" media="(min-width: 240px)">
+                        <source srcset="/assets/IMG_6562_2_240x320.webp" type="image/webp" media="(min-width: 240px)">
+                        <img src="/assets/IMG_6562_lowres.jpg" alt="" width="240" height="320">
+                    </picture>
+                </aside>
+                <article>
+                    <p>
+                        I'm a 4th-year student at UCSD studying Computer Science. I have worked on several projects covering
+                        various aspects of software engineering, including both front and back-end development, AI/Machine 
+                        Learning, embedded systems, and more.<br>
+                        I first started programming with Java in high school. I quickly found that I enjoyed seeing what I made 
+                        appear on the screen. I liked the creativity and diversity that programming enabled. I began expanding my 
+                        skillset and learning other languages, and I eventually decided to pursue programming further in college.
+                        <br>
+                        Recently, I've been interested more in web development. I've learned that the design of a webpage has a big 
+                        impact on the overall user experience, and can make or break a product. I've also been learning more about
+                        machine learning. I think that AI will continue to play a bigger role in the business and professional 
+                        world, and I'm interested in seeing how AI can positively affect the software field.
+                    </p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <div class="bottom">
+                <nav>
+                    <a href="home.html">Home</a> <a href="projects.html">Projects</a> <a href="contact.html">Contact Me</a>
+                    <a href="https://www.linkedin.com/in/matthew-kusnierz-95a0731ba">LinkedIn</a>
+                </nav>
+            </div>
+        </footer>
+    </body>
 </html>

@@ -13,6 +13,18 @@
                 border: 1px solid green;
             }
         </style>
+        <script>
+            class HelloWorld extends HTMLElement {
+                constructor() {
+                    super();
+                    console.log("Hello world!");
+                }
+            }
+
+            customElements.define('my-hello-world', HelloWorld);
+        </script>
+
+        <my-hello-world></my-hello-world>
     </head>
     <body>
         <header>
