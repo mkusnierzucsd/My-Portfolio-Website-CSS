@@ -12,7 +12,20 @@
             .bottom{
                 border: 1px solid green;
             }
+            span.warn{
+                color: yellowgreen;
+            }
         </style>
+        <script>
+            class HelloWorld extends HTMLElement {
+                constructor() {
+                    super();
+                    console.log("Hello world!");
+                }
+            }
+
+            customElements.define('my-hello-world', HelloWorld);
+        </script> <!-- This is a placeholder for the script element. Will be changed when JS is implemented-->
     </head>
     <body>
         <header>
@@ -55,6 +68,9 @@
                     src="/assets/MyResume.pdf"></iframe>
                 <button type="button">Download my resume</button>
                 <dialog open>
+                    <label for="progress-bar"><span class="warn">Construction Warning!</span></label>
+                    <progress id="progress-bar" max="100" value="40"></progress><svg class="ex" width="50" height="50"><line x1="0" x2="50" y1="50" y2="0" stroke="red" stroke-width="5"></line>
+                        <line x1="50" x2="0" y1="50" y2="0" stroke="red" stroke-width="5"></line></svg>
                     <p>This page is still under construction! Some features may not work yet :/</p>
                     <form method="dialog">
                         <button>OK</button>
@@ -85,7 +101,11 @@
         <footer>
             <div class="bottom">
                 <nav>
-                    <a href="home.html">Home</a> <a href="projects.html">Projects</a> <a href="contact.html">Contact Me</a>
+                    <ol>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ol>
                     <p><em>Check out my links here!</em></p>
                     <a href="https://www.linkedin.com/in/matthew-kusnierz-95a0731ba">LinkedIn</a>
                 </nav>
