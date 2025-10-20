@@ -1,4 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is the contact page of my site.">
+        <title>Contact Me</title>
+        <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+        <style>
+            .top{
+                border: 1px solid black;
+            }
+            .bottom{
+                border: 1px solid green;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="top">
+                <h1>Contact Me</h1>
+                <a href="home.html">Home</a> <a href="about.html">About Me</a> <a href="projects.html">My Projects</a>
+            </div>
+        </header>
+        <main>
+            <h2>Want to get in touch?</h2>
+            <form method="get">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required><br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required><br>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" cols="33" placeholder="Hi! Let's get in touch..." required>
+                </textarea><br>
+                <button>Submit</button>
+            </form>
+            <dialog open>
+                <p>This page is still under construction! Some features may not work yet :/</p>
+                <form method="dialog">
+                    <button>OK</button>
+                </form>
+            </dialog>
+        </main>
+        <footer>
+            <div class="bottom">
+                <nav>
+                    <a href="home.html">Home</a> <a href="about.html">About Me</a> <a href="projects.html">My Projects</a>
+                    <p><em>Check out my links here!</em></p>
+                    <a href="https://www.linkedin.com/in/matthew-kusnierz-95a0731ba">LinkedIn</a>
+                </nav>
+            </div>
+    </body>
 </html>
