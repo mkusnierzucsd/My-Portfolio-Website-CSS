@@ -1,4 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is the about page of my site. Here you can learn all about me.">
+        <title>About Me</title>
+        <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+        <style>
+            .top{
+                border: 1px solid black;
+            }
+            .bottom{
+                border: 1px solid green;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="top">
+                <h1>My Projects</h1>
+                <nav>
+                    <a href="home.html">Home</a> <a href="about.html">About Me</a> <a href="contact.html">Contact Me</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <h2>Here are some of my projects</h2>
+            <section>
+                <h3>
+                    <a href="https://colab.research.google.com/drive/1-bKBLW9ZAL_WHB8FuWlP39oS3Vh8escl?usp=sharing">
+                        California Housing Analysis</a>
+                </h3>
+                <img src="assets/CAHousingProj.png" 
+                    alt="A screenshot showing a Google Colab notebook containing code and graphs for a machine learning project"
+                    width="360" height="360">
+                <p>
+                    <strong>Skills:</strong> Python, Tensorflow, Pandas<br>
+                    In this project, I analyzed California Housing Prices based on factors like geographic area, house size, median 
+                    income, etc. using a machine learning model that predicted the price of a house based on the aforementioned 
+                    factors.
+                </p>
+            </section>
+            <section>
+                <h3>
+                    <a href="https://tech-assignment-final-project-pain-train.onrender.com/index">
+                        Wardrobe Recommendation Website</a>
+                </h3>
+                <iframe id="mlsite" title="ML Site" width="640" height="360" 
+                    src="https://tech-assignment-final-project-pain-train.onrender.com/index"></iframe>
+                <p>
+                    <strong>Skills:</strong> Python, JavaScript, HTML, C++, FastAPI<br>
+                    Built a website where a user can check the weather in their location and get wardrobe recommendations
+                    from an LLM based on the weather and the user's wardrobe. The user can also create an account, add,
+                    remove, and edit wardrobe items, add real-time temperature and pressure sensors, and view a real-time
+                    graph of environmental data. Front-end coded with HTML and JavaScript, back-end coded with Python.
+                    Microcontroller code written in C++. Built with Docker.<br>
+                    Check out the <a href="https://www.youtube.com/watch?v=dArWul4MCYI">demo</a>.
+                </p>
+            </section>
+            <section>
+                <h3>Snake</h3>
+                <p>
+                    Programmed the game Snake with C and an Arduino microcontroller. Made using Atmel AVR and custom
+                    libraries.<br>
+                    Check out the <a href="https://www.youtube.com/watch?v=YVADGBSmJvo">demo</a> and 
+                    <a href="https://github.com/mkusnierz27b/Snake---Embedded-Systems-Design-Project/tree/main/CS%20120B%20CLAB%20PROJECT%20ST7735%20Test">GitHub repo</a>
+                </p>
+            </section>
+        </main>
+        <footer>
+            <div class="bottom">
+                <nav>
+                    <a href="home.html">Home</a> <a href="about.html">About Me</a> <a href="contact.html">Contact Me</a>
+                    <p><em>Check out my links here!</em></p>
+                    <a href="https://www.linkedin.com/in/matthew-kusnierz-95a0731ba">LinkedIn</a>
+                </nav>
+            </div>
+        </footer>
+    </body>
 </html>
