@@ -1,31 +1,70 @@
-.top {
-    border: 1px solid black;
-}
-.bottom {
-    border: 1px solid black;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: auto auto auto;
-}
-my-header {
-    display: block;
-    padding: 1.5rem;
-    background-color: rgb(106, 106, 255);
-    border-left: 5px solid #333;
-    border-right: 5px solid #333;
-    margin-bottom: 1.5rem;
+:root {
+    --my-header-color: rgb(106, 106, 255);
 }
 
-nav[id="links"] {
+body {
+    font-family: swansea, Helvetica, sans-serif;
+    background-color: lightblue;
+    font-size: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+header {
+    border: 1px solid var(--my-header-color, lightblue);
+    padding-bottom: 0.75rem;
+    background-color: var(--my-header-color, lightblue);
+    position: sticky;
+    top: 0;
+}
+footer {
+    border: 1px solid black;
+    padding-top: 0.75rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 5fr;
+}
+
+nav.links {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
-    align-items: center; 
+    align-items: center;
+    & a {
+        font-size: 1.5em;
+        border: 1px solid rgb(147, 85, 27);
+        border-radius: 25px;
+        padding: 0.5em;
+        color: white;
+        background-color: chocolate;
+    };
+
+    & a:hover {
+        /* box-shadow: 10% 10% 5% slategray; */
+        background-color: green;
+        border-color: green;
+    }
 }
-nav[id="site-links"] {
+nav.site-links {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -33,6 +72,10 @@ nav[id="site-links"] {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
     align-items: center; 
+
+    & a {
+        font-size: 1.5em;
+    };
 }
 
 form[id="feedback-form"] {
@@ -70,6 +113,3 @@ form[id="feedback-form"] {
   font-style: italic;
 }
 
-body {
-    font-family: swansea, Helvetica, sans-serif;
-}

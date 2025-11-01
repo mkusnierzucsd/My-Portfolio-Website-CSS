@@ -5,34 +5,14 @@
         <meta name="description" content="This is the about page of my site. Here you can learn all about me.">
         <title>About Me</title>
         <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-        <style>
-            .top{
-                border: 1px solid black;
-            }
-            .bottom{
-                border: 1px solid green;
-            }
-            span.warn{
-                color: yellowgreen;
-            }
-        </style>
-        <script>
-            class HelloWorld extends HTMLElement {
-                constructor() {
-                    super();
-                    console.log("Hello world!");
-                }
-            }
-
-            customElements.define('my-hello-world', HelloWorld);
-        </script> <!-- This is a placeholder for the script element. Will be changed when JS is implemented-->
+        <link rel="stylesheet" href="/src/styles.css" />
     </head>
     <body>
         <header>
-            <div class="top">
-                <h1>About Me</h1>
+            <h1>About Me</h1>
+            <nav class="links">
                 <a href="home.html">Home</a> <a href="projects.html">Projects</a> <a href="contact.html">Contact Me</a>
-            </div>
+            </nav>
         </header>
         <main>
             <section>
@@ -68,15 +48,6 @@
                 <iframe id="resume" title="resume" width="232" height="300"
                     src="/assets/MyResume.pdf"></iframe>
                 <button type="button">Download my resume</button>
-                <dialog open>
-                    <label for="progress-bar"><span class="warn">Construction Warning!</span></label>
-                    <progress id="progress-bar" max="100" value="40"></progress><svg class="ex" width="50" height="50"><line x1="0" x2="50" y1="50" y2="0" stroke="red" stroke-width="5"></line>
-                        <line x1="50" x2="0" y1="50" y2="0" stroke="red" stroke-width="5"></line></svg>
-                    <p>This page is still under construction! Some features may not work yet :/</p>
-                    <form method="dialog">
-                        <button>OK</button>
-                    </form>
-                </dialog>
             </section>
             <section>
                 <h3>My Skills</h3>
@@ -95,22 +66,19 @@
                 <ul>
                     <li><strong>B.S. Computer Science</strong> (in progress) - <i>University of California, San Diego</i></li>
                     <li><strong>Deep Learning Certificate</strong> - <i>MITxPro Program</i></li>
-                    <li>placeholder</li>
                 </ul>
             </section>
         </main>
         <footer>
-            <div class="bottom">
-                <nav>
-                    <ol>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contact.html">Contact Me</a></li>
-                    </ol>
-                    <p><em>Check out my links here!</em></p>
-                    <a href="https://www.linkedin.com/in/matthew-kusnierz-95a0731ba">LinkedIn</a>
-                </nav>
-            </div>
+            <nav class="site-links">
+                <ol>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ol>
+                <p><em>Check out my links here!</em></p>
+                <a href="https://www.linkedin.com/in/matthew-kusnierz-95a0731ba">LinkedIn</a>
+            </nav>
         </footer>
     </body>
 </html>
